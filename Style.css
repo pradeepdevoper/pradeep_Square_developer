@@ -1,0 +1,25 @@
+.outer-square {
+  /* your css goes here */
+  width: 600px;
+  height: 600px;
+  display: grid;
+  /* border: 2px solid red; */
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.inner-square {
+  /* your css goes here */
+  /* display: inline; */
+  background-color: green;
+  height: 100%;
+  width: 100%;
+
+}
+.circle {
+  /* your css goes here */
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+  border-radius: 50%;
+}
