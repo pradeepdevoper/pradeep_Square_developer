@@ -1,25 +1,29 @@
+/* styles.css */
+
 .outer-square {
-  /* your css goes here */
   width: 600px;
   height: 600px;
+  background-color: #fff;
   display: grid;
-  /* border: 2px solid red; */
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
-.inner-square {
-  /* your css goes here */
-  /* display: inline; */
-  background-color: green;
-  height: 100%;
-  width: 100%;
 
+.inner-element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.square {
+  width: calc(100% - 20px); /* 10px padding on each side */
+  height: calc(100% - 20px);
+  background-color: green;
+}
+
 .circle {
-  /* your css goes here */
-  height: 100%;
-  width: 100%;
+  width: calc(100% - 20px); /* 10px padding on each side */
+  height: calc(100% - 20px);
   background-color: blue;
-  border-radius: 50%;
+  border-radius: 50%; /* to create a circle */
 }
